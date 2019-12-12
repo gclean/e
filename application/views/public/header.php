@@ -28,8 +28,7 @@
                             <div class="logo"><a href="<?= base_url() ?>">Go-Clean</a></div>
                             <nav class="main_nav">
                                 <ul>
-                                    <li><a href="<?= base_url() ?>">HOME</a>
-                                    <li>
+                                    <li><a href="<?= base_url() ?>">HOME</a></li>
                                     <li><a href="<?= base_url() ?>offers">OFFERS</a></li>
                                     <li><a href="<?= base_url() ?>contact">CONTACT</a></li>
                                 </ul>

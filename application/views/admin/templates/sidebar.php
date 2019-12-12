@@ -29,6 +29,12 @@
         </a>
       </li>
       <li class="">
+        <a href="<?= base_url() ?>admin/news">
+          <i class="fa fa-exchange"></i>
+          <span>News</span>
+        </a>
+      </li>
+      <li class="">
         <a href="<?= base_url() ?>admin/user">
           <i class="fa fa-cubes"></i>
           <span>User Management</span>

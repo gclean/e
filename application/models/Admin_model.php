@@ -50,6 +50,10 @@ class Admin_model extends CI_Model
     {
         $this->db->delete('user', ['id_user' => $id]);
     }
+    public function deleteNews($id)
+    {
+        $this->db->delete('berita', ['id_berita' => $id]);
+    }
 
     // public function deleteTsc($id)
     // {
