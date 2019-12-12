@@ -36,10 +36,18 @@
                             </nav>
                             <div class="header_extra ml-auto">
                                 <div class="shopping_cart">
-                                    <a href="<?= base_url() ?>login">
-
-                                        <div>LOGIN</div>
-                                    </a>
+                                    <?php if (isset($_SESSION['username'])) { ?>
+                                        <a class="hidden-xs">
+                                            <div>Hi, <?= ($_SESSION['username']) ?></div>
+                                        </a>
+                                        <a href="<?= base_url(); ?>user/login/auth/logout">
+                                            <div>LOGOUT</div>
+                                        </a>
+                                    <?php } else { ?>
+                                        <a href="<?= base_url(); ?>user/login/auth/index">
+                                            <div>LOGIN</div>
+                                        </a>
+                                    <?php } ?>
                                 </div>
                                 <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
                             </div>
