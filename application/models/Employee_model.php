@@ -3,13 +3,13 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin_model extends CI_Model
+class Employee_model extends CI_Model
 {
 
     public function getJoinItem()
     {
         $this->db->select('*');
-        $this->db->from('user');
+        $this->db->from('karyawan');
         // $this->db->join('user', 'user.id_user = karyawan.id_karyawan');
         return $query = $this->db->get()->result_array();
     }

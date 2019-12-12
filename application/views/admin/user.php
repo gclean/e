@@ -2,13 +2,13 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">User List</h3>
-                <hr>
+                <!-- <h3 class="box-title">User List</h3> -->
+                <!-- <hr>
                 <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash');
                                                         ?>"></div>
                 <?php if ($this->session->flashdata('flash')) : ?>
-                <?php endif; ?>
-                <a href="<?= base_url('') ?>admin/item/addItem" class="btn btn-primary">Add Item</a>
+                <?php endif; ?> -->
+                <!-- <a href="<?= base_url('') ?>admin/item/addItem" class="btn btn-primary">Add Item</a> -->
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -26,13 +26,12 @@
                         <?php foreach ($item as $produk) : ?>
                             <tr>
                                 <td><?php echo $nomor ?></td>
-                                <td><?php echo $produk['nama_kategori'] ?></td>
-                                <td><?php echo $produk['nama_desain'] ?></td>
-                                <td><?php echo $produk['deskripsi'] ?></td>
+                                <td><?php echo $produk['username'] ?></td>
+                                <td><?php echo $produk['jenis_kelamin'] ?></td>
                                 <td>
-                                    <a href="<?= base_url('') ?>admin/item/detailItem/<?= $produk['id_item'] ?>" class="btn btn-primary">Detail</a>
-                                    <a href="<?= base_url('') ?>admin/item/updateItem/<?= $produk['id_item'] ?>" class="btn btn-warning">Ubah</a>
-                                    <a href="<?= base_url('') ?>admin/item/deleteItem/<?= $produk['id_item'] ?>" class="btn btn-danger tombol-hapus">Hapus</a>
+                                    <!-- <a href="<?= base_url('') ?>admin/item/detailItem/<?= $produk['id_item'] ?>" class="btn btn-primary">Detail</a> -->
+                                    <!-- <a href="<?= base_url('') ?>admin/item/updateItem/<?= $produk['id_item'] ?>" class="btn btn-warning">Ubah</a> -->
+                                    <a href="<?= base_url('') ?>admin/item/deleteItem/<?= $produk['id_user'] ?>" class="btn btn-danger tombol-hapus">Hapus</a>
                                 </td>
                             </tr>
                             <?php $nomor++; ?>

@@ -4,7 +4,6 @@
 <head>
 
   <head>
-    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>/assets/front/images/favicon.ico" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= $title; ?></title>

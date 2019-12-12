@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Item extends CI_Controller
+class User extends CI_Controller
 {
 
 
@@ -18,7 +18,7 @@ class Item extends CI_Controller
         $data['item'] = $this->Admin_model->getJoinItem();
         $data['title'] = 'User Management';
         $data['judul'] = 'User Management';
-        $data['content'] = 'admin/item';
+        $data['content'] = 'admin/user';
         $this->load->view('admin/templates/index', $data);
     }
 

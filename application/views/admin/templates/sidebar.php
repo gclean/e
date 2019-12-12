@@ -29,13 +29,13 @@
         </a>
       </li>
       <li class="">
-        <a href="<?= base_url() ?>admin/item">
+        <a href="<?= base_url() ?>admin/user">
           <i class="fa fa-cubes"></i>
           <span>User Management</span>
         </a>
       </li>
       <li class="">
-        <a href="<?= base_url() ?>admin/designer">
+        <a href="<?= base_url() ?>admin/employee">
           <i class="fa fa-exchange"></i>
           <span>Employee</span>
         </a>

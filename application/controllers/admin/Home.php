@@ -18,7 +18,7 @@ class Home extends CI_Controller
             $data['karyawan'] = $this->Admin_model->getCountWorker();
             $data['content'] = 'admin/dashboard';
             $data['judul'] = 'Dashboard';
-            $data['title'] = 'Dashboard - Page';
+            $data['title'] = 'Dashboard';
             $this->load->view('admin/templates/index', $data);
         }
     }
